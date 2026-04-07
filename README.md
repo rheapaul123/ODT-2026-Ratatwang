@@ -52,22 +52,23 @@ By the final review, this README should clearly show:
 # 1. Team Identity
 
 ## 1.1 Studio / Group Name
-`[Enter your group name]`
+`Ratatwang`
 
 ## 1.2 Team Members
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Student 1]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `[Student 2]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `Rhea` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `Zanna` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
 
 ## 1.3 Project Title
-`[Enter the title of your project]`
+`Eye Spy`
 
 ## 1.4 One-Line Pitch
-`[Describe your project in one sentence]`
+`The all-seeing eye decides your fate as you're on the clock to find the colour the it displays`
 
 ## 1.5 Expanded Project Idea
+
 In 1–2 paragraphs, explain:
 - what your project is,
 - what kind of playful experience it creates,
@@ -286,7 +287,7 @@ Add a sketch with labels showing:
 ## 8.1 Mechanical Features
 Check all that apply.
 
-- [ ] Gears
+- [x] Gears
 - [ ] Pulleys
 - [ ] Belt drives
 - [ ] Linkages
@@ -565,7 +566,7 @@ Expected outcomes:
 ### Week 2 — Build Subsystems
 Expected outcomes:
 - [ ] Electronics tests completed
-- [ ] CAD / structure planning completed
+- [ ] CAD/structure planning completed
 - [ ] App UI started if needed
 - [ ] Mechanical concept tested
 - [ ] Main subsystems partially working
