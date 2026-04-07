@@ -210,17 +210,17 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
-- [ ] Mechanical
+- [x] Electronics-based
+- [x] Mechanical
 - [ ] Sensor-based
-- [ ] App-connected
-- [ ] Motorized
+- [x] App-connected
+- [x] Motorized
 - [ ] Sound-based
-- [ ] Light-based
+- [x] Light-based
 - [ ] Screen/UI-based
 - [ ] Fabricated structure
-- [ ] Game logic based
-- [ ] Installation / tabletop experience
+- [x] Game logic based
+- [x] Installation / tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -287,24 +287,24 @@ Add a sketch with labels showing:
 ## 8.1 Mechanical Features
 Check all that apply.
 
-- [x] Gears
+- [ ] Gears
 - [ ] Pulleys
 - [ ] Belt drives
-- [ ] Linkages
-- [ ] Hinges
+- [x] Linkages
+- [x] Hinges
 - [ ] Shafts
 - [ ] Springs
 - [ ] Bearings
 - [ ] Wheels
 - [ ] Sliders
-- [ ] Levers
+- [x] Levers
 - [ ] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+The mechanism is meant to mirror that of eyelids closing over an eyeball. In this case, 2 eyelids conceal or reveal an iris (Neopixel ring) for the game to commence. 
 
 ## 8.3 Motion Planning
 If something moves, explain:
