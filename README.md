@@ -123,7 +123,7 @@ List what inspired the project.
 |---|---|---|
 | `Toy` | `I Spy` | `We took inspiration from the game theory of this game to implement into our play` |
 | `Object` | `Animatronic Servo Eyes` | `We took inspiration from the physical structures of these eyes for our fabrication` 
-|`Links for inspo and 3d print models: https://youtu.be/5bfzqe0QXRg?si=PoGbVW39JObyZQRv https://youtu.be/lPpexsNYKsE?si=GfHDR3qoW0oU5YEM `|
+|||`Links for inspo and 3d print models: https://youtu.be/5bfzqe0QXRg?si=PoGbVW39JObyZQRv https://youtu.be/lPpexsNYKsE?si=GfHDR3qoW0oU5YEM `|
 |`[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
 
