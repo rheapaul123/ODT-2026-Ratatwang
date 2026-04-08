@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 `Eye Spy`
 
 ## 1.4 One-Line Pitch
-`The all-seeing eye decides your fate as you're on the clock to find the colour the it displays`
+`The all-seeing eye decides your fate as you're on the clock to find the colour that it displays` Will you spy or will you die?
 
 ## 1.5 Expanded Project Idea
 
@@ -102,7 +102,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`The object we are building is a game for playful interaction. Inspired by common experiences of playing 'eye spy' (especially on car trips), we want the players to feel the same adrenaline of finding an appropriate object, anticipation of figuring out whether they've suceeded, and joy if they have.`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -121,15 +121,17 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `Toy` | `I Spy` | `We took inspiration from the game theory of this game to implement into our play` |
+| `Object` | `Animatronic Servo Eyes` | `We took inspiration from the physical structures of these eyes for our fabrication` 
+|`Links for inspo and 3d print models: https://youtu.be/5bfzqe0QXRg?si=PoGbVW39JObyZQRv https://youtu.be/lPpexsNYKsE?si=GfHDR3qoW0oU5YEM `|
+|`[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+
 
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`Typically, _I spy_ is played with one correct answer (an object) on the basis of various factors, one of which includes colour. Our game emphasises one element, colour, as the determining factor. To add complexity, the game makes the player remember the colour they are trying to find. This forces them to compromise between what they can find and for how long they can remember. The game does provide some respite by not having one specific answer, rather a range in which any object whose colour falls in that range is applicable.`
 
 ---
 
