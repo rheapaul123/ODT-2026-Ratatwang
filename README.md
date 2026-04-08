@@ -317,7 +317,25 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`Eyelids
+What moves: Two curved, shells that rotate in opposing directions to close over the eyeball (Neopixel) and back up to open.
+What causes it: A dedicated servo pushes a pushrod (a rigid link) that is connected to the back edge of the lid. As the servo arm rotates, the rod pushes the lid closed and vice versa.
+How far: ~20–40° of arc at the lid pivot, enough to go from fully open to fully closed over the eyeball surface.
+How fast: ~0.10 to 0.20s for the motion, with the added friction of the eyelids this could increase slightly
+What could go wrong:
+Lid catches on the eyeball surface, which isn't ideal for the eyelids, servo or Neopixel
+The pushrod connection point cracks
+Lids don't close symmetrically if their linkage doesn't act with simultaneous action`
+
+`Pushrods
+What moves: A rigid wire or printed rods makes the rotational arc of the servo into a linear push/pull force.
+What causes it: A physical pulls or pushes the end of the rod, where the eyelids are attached.
+How far: Though the rod doesn't bend it causes a displacement of the eyeball with an approximate of 3–8 mm of linear travel.
+How fast: Moves at the same speed as the servo horn tip — no mechanical advantage or disadvantage, roughly 30–80 mm/s during a typical eye movement.
+What could go wrong:
+If the rod is too long it will buckle and possible snap
+If the part where it is attached is not precise enough, the translation of force/ movement will be inefficient
+Vibration causes the rod to bounce out of its clip if the fit is not snug`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
