@@ -65,7 +65,7 @@ By the final review, this README should clearly show:
 `Eye Spy`
 
 ## 1.4 One-Line Pitch
-`The all-seeing eye decides your fate as you're on the clock to find the colour that it displays` Will you spy or will you die?
+`The all-seeing eye decides your fate as you're on the clock to find the colour that it displays. Will you spy or will you die?` 
 
 ## 1.5 Expanded Project Idea
 
