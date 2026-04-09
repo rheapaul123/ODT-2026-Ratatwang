@@ -73,10 +73,11 @@ In 1–2 paragraphs, explain:
 - what your project is,
 - what kind of playful experience it creates,
 - what makes it fun, curious, engaging, strange, satisfying, competitive, or delightful,
-- what technologies are involved.
+- What technologies are involved?
 
 **Response:**  
-`[Write here]`
+`[The All-Seeing Eye: Race a watchful, glowing eye to guess its secret colour before a 60-second timer dooms you—spy right or "die" in silly chaos!
+]`
 
 ---
 
@@ -90,7 +91,7 @@ You are allowed to build:
 - games,
 - interactive objects,
 - playful machines,
-- kinetic artifacts,
+- kinetic artefacts,
 - humorous devices,
 - strange but delightful experiences,
 - things that are entertaining to use or watch.
@@ -102,15 +103,15 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`The object we are building is a game for playful interaction. Inspired by common experiences of playing 'eye spy' (especially on car trips), we want the players to feel the same adrenaline of finding an appropriate object, anticipation of figuring out whether they've suceeded, and joy if they have.`
+`The object we are building is a game for playful interaction. Inspired by common experiences of playing 'eye spy' (especially on car trips), we want the players to feel the same adrenaline of finding an appropriate object, anticipation of figuring out whether they've succeeded, and joy if they have.`
 
 ## 2.3 Design Persona
 Complete the sentence below:
 
-> We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
+> We are designing this project as if we are a small creative studio making a **[toy/game / playable object / interactive experience]** for **[children / teens / adults/classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`[We are designing this project as if we are a small creative studio making a **[game]** for **[ whimsical exhibition visitors of mixed age ranges]`
 
 ---
 
@@ -124,14 +125,12 @@ List what inspired the project.
 | `Toy` | `I Spy` | `We took inspiration from the game theory of this game to implement into our play` |
 | `Object` | `Animatronic Servo Eyes` | `We took inspiration from the physical structures of these eyes for our fabrication` 
 |||`Links for inspo and 3d print models: https://youtu.be/5bfzqe0QXRg?si=PoGbVW39JObyZQRv https://youtu.be/lPpexsNYKsE?si=GfHDR3qoW0oU5YEM `|
-|`[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-
 
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
-`Typically, _I spy_ is played with one correct answer (an object) on the basis of various factors, one of which includes colour. Our game emphasises one element, colour, as the determining factor. To add complexity, the game makes the player remember the colour they are trying to find. This forces them to compromise between what they can find and for how long they can remember. The game does provide some respite by not having one specific answer, rather a range in which any object whose colour falls in that range is applicable.`
+`Typically, _I spy_ is played with one correct answer (an object) based on various factors, one of which includes colour. Our game emphasises one element, colour, as the determining factor. To add complexity, the game makes the player remember the colour they are trying to find. This forces them to compromise between what they can find and for how long they can remember. The game does provide some respite by not having one specific answer, rather a range in which any object whose colour falls in that range is applicable.`
 
 ---
 
@@ -147,18 +146,18 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`[press → colour flashes → observe → input photo → photo is processed → stage completion]`
 
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Who is this for? | `[whimsical exhibit visitors]` |
+| Age range | `[12-25]` |
+| Solo or multiplayer | `[solo]` |
+| Expected duration of one round | `[60 seconds]` |
+| What should the player feel? | `[excietment, environmetal observance]` |
+| Is explanation required before use? | `[a brief explanation on the rules of the game is required, including how they must take photos and winning criterias]` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
@@ -174,8 +173,8 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
+- `[You must take photos live and no select those from your library]`
+- `[Users only get a point if they identify the colour accurately]`
 - `[Rule 3]`
 - `[Rule 4]`
 
@@ -186,9 +185,9 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
+- [ ] `[The sequence of interaction loop occours seamlesly]`
+- [ ] `[The hex codes are accurately analysed and processed by the esp32]`
+- [ ] `[The code rejects any colour that does not match that flashed by the neopixel]`
 - [ ] `[Condition 4]`
 - [ ] `[Condition 5]`
 
@@ -196,14 +195,14 @@ Your project will be considered complete only if these conditions are met.
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`[The compact version features a NeoPixel that flashes a colour. Users snap a photo of a matching shade, which gets processed for scoring points.]`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `[Two movable eyes that both flash colours for users to play with]`
+- `[An app UI that matches the overall aesthetic of the game we intent to make]`
+- `[Sound feedbacks everytime a player wins or loses]`
 
 ---
 
@@ -222,7 +221,7 @@ Check all that apply.
 - [ ] Screen/UI-based
 - [ ] Fabricated structure
 - [x] Game logic based
-- [x] Installation / tabletop experience
+- [x] Installation/tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -233,7 +232,7 @@ Include:
 - processing,
 - output,
 - physical structure,
-- app interaction if any.
+- app interaction, if any.
 
 **Response:**  
 `[Write here]`
