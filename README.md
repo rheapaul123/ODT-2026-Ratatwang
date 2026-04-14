@@ -413,11 +413,49 @@ Include:
 
 **Response:**  
 `[
-Startup Behavior
+**Startup Behavior**
 Initialize NeoPixel LED (turned OFF initially)
 Initialize UART communication with HC-05 Bluetooth module
 Initialize servo motor and set eyelids to OPEN position
-Send “Eye Spy ready!” message via Bluetooth ]`
+Send “Eye Spy ready!” message via Bluetooth 
+**Input Handling**
+Continuously listen for incoming Bluetooth data
+Accept user input in the format: R,G,B
+Store incoming data in a buffer until a newline character is received
+**Sensor / Input Reading**
+Parse received Bluetooth string into integer RGB values
+Validate input format (must contain exactly 3 values)
+Ignore invalid or malformed inputs
+**Decision Logic**
+Randomly select a target colour from predefined palette
+Convert hex colour to RGB format
+Calculate Euclidean distance between:
+Target colour
+User’s guessed colour
+Compare distance with predefined threshold
+**Output Behavior**
+Display target colour by flashing NeoPixel
+Close eyelids (servo rotates) during user input phase
+Reopen eyelids when guess is received
+If guess is correct (distance ≤ threshold):
+Flash green light multiple times
+Send “PASS” via Bluetooth
+Restart game loop
+If guess is incorrect:
+Flash red light multiple times
+Send “FAIL” via Bluetooth
+Turn off LED
+Stop the game
+**Communication Logic**
+Send messages to mobile app:
+TARGET:#XXXXXX
+WAITING
+PASS or FAIL
+Receive RGB guesses via Bluetooth UART
+**Reset Behavior**
+Game continues automatically after a correct guess
+Game terminates after incorrect guess
+Requires manual reset (restart ESP32) to play again]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -515,15 +553,25 @@ Examples:
 - displaying data.
 
 **Response:**  
-`[Write here]`
+`[The mobile application is essential for enabling user interaction with the game, as the ESP32 system itself has no direct input interface.
+The app allows the player to:
+Send colour guesses wirelessly via Bluetooth in RGB format
+Act as the primary input system for gameplay
+Provides an intuitive colour selection interface (through colour picker)]`
 
 ## 11.3 App Features
 
 | Feature | Purpose |
 |---|---|
-| `[Bluetooth connect button]` | `[Purpose]` |
-| `[Score display]` | `[Purpose]` |
-| `[Control button / slider / label]` | `[Purpose]` |
+| `[BBluetooth Client (Non-visible)]` | `[Handles wireless communication between app and ESP32]` |
+| `[Canvas]` | `[Allows user interaction or colour selection (touch-based input if used)]` |
+| `[Camera (Non-visible)]` | `[Captures real-world colours for gameplay input]` |
+| `[Take Picture Button]` | `[Opens camera interface to capture an image]` |
+| `[RGB Input (Color Picker)]` | `[Allows user to select a colour guess]` |
+| `[Colour Preview Square]` | `[Displays the currently selected/picked colour visually]` |
+| `[RGB Value Label]` | `[Shows the exact RGB values of the selected colour]` |
+| `[Confirm Colour Button]` | `[Sends the selected RGB values to ESP32 via Bluetooth]` |
+
 
 ## 11.4 UI Mockup
 Insert a sketch or screenshot of the app interface.
@@ -533,7 +581,7 @@ Insert a sketch or screenshot of the app interface.
 
 ## 11.5 App Screen Flow
 
-1. `[Step 1]`
+1. `[ ]`
 2. `[Step 2]`
 3. `[Step 3]`
 4. `[Step 4]`
