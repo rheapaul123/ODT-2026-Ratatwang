@@ -359,8 +359,8 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `Servo Motor` | `1` | `Controls eyeball movement` |
+| `Neopixel` | `1` | `Flashes the colour(s) that the player needs to find` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -378,9 +378,9 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Question | Response |
 |---|---|
-| Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
+| Power source | `Adaptor` |
+| Voltage required | `5V for Servo(s), and 3.3V for the Neopixels` |
+| Current concerns | `Grounding is not fully/ properly connected, causing short circuiting` |
 | Safety concerns | `[Write here]` |
 
 ---
