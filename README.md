@@ -392,7 +392,12 @@ Insert a hand-drawn or software-made circuit diagram.
 | Tool / Platform | Purpose |
 |---|---|
 | `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
+| `[MicroPython (via Thonny IDE)]` | `[Writing and uploading code to ESP32]` |
+| `[MIT App Inventor]` | `[Mobile app to send RGB guesses via Bluetooth]` |
+| `[HC-05 Bluetooth Module]` | `[Wireless serial communication between app and ESP32]` |
+| `[NeoPixel Library]` | `[Control RGB LED (eye pupil colour display)]` |
+| `[PWM (MicroPython)]` | `[Control servo motor for eyelid movement]` |
+| `[Blender + Cura Software]` | `[Making the 3D print of eylids]` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -407,7 +412,12 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`[
+Startup Behavior
+Initialize NeoPixel LED (turned OFF initially)
+Initialize UART communication with HC-05 Bluetooth module
+Initialize servo motor and set eyelids to OPEN position
+Send “Eye Spy ready!” message via Bluetooth ]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -423,12 +433,64 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`[<img width="539" height="517" alt="Screenshot 2026-04-14 at 10 20 08 AM" src="https://github.com/user-attachments/assets/4bffa2b8-094e-4426-82ae-f5ddb741a28a" />]`
 
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+[START
+
+INITIALIZE NeoPixel
+INITIALIZE Servo
+INITIALIZE Bluetooth UART
+
+SET eyes to OPEN
+
+PRINT "Eye Spy ready"
+SEND "Eye Spy ready" via Bluetooth
+
+WHILE game is running:
+
+    SELECT random colour from palette
+    CONVERT hex to RGB
+
+    PRINT and SEND target colour
+
+    OPEN eyes
+    FLASH target colour
+
+    TURN OFF LED
+    CLOSE eyes
+    SEND "WAITING"
+
+    SET guess = null
+
+    WHILE guess not received:
+        READ Bluetooth input
+        IF valid RGB received:
+            STORE guess
+            OPEN eyes
+
+    CALCULATE distance between target and guess
+
+    IF distance <= threshold:
+        PRINT "PASS"
+        OPEN eyes
+        FLASH green
+        SEND "PASS"
+        CONTINUE game loop
+
+    ELSE:
+        PRINT "FAIL"
+        OPEN eyes
+        FLASH red
+        SEND "FAIL"
+        TURN OFF LED
+        STOP game
+
+END
+
+PRINT "Game ended"]
 ```
 
 ---
@@ -436,7 +498,7 @@ Suggested sequence:
 # 11. MIT App Inventor Plan
 
 ## 11.1 Is an app part of this project?
-- [ ] Yes
+- [x] Yes
 - [ ] No
 
 If yes, complete this section.
