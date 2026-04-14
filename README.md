@@ -341,8 +341,8 @@ If your project includes mechanical motion, document the digital planning before
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
-| `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `Blender` | `` | `Since the eyelids were sourced from an external link (https://www.thingiverse.com/thing:1877417), the eyelid/ blinking motion were more-or-less confirmed. The crank, however, had to be modified and created directly on blender. Viewing the lever over where the crank would pivot confirmed this. However, in our test printing before the final printing, more tolerance was created to account for the added material that does not fully sand off from the supports.` |
+| `Blender Model to Cura` | `[Link or screenshot]` | `A picture of the initial model before scaling on Cura (changes were saved after on Blender, so the ss is from Cura). The software helped verify any gaps that could be in the build since that was an issue with a previously sourced file. It also helped verify the viability of the print.` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
