@@ -58,8 +58,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Rhea` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
-| `Zanna` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Write here]` |
+| `Rhea` | `App` | `Coding / Electronics` | `[Write here]` |
+| `Zanna` | `Mechanics / Fabrication` | `Coding / Electronics` | `[Write here]` |
 
 ## 1.3 Project Title
 `Eye Spy`
@@ -276,10 +276,11 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `37cm` |
+| Width | `21cm` |
+| Height | `27cm` |
+| Estimated weight | `~1.7kg` |
+|Estimates given considering box along with eye model| Diameter of the eye model: 14cm|
 
 ---
 
@@ -398,6 +399,7 @@ Insert a hand-drawn or software-made circuit diagram.
 | `[NeoPixel Library]` | `[Control RGB LED (eye pupil colour display)]` |
 | `[PWM (MicroPython)]` | `[Control servo motor for eyelid movement]` |
 | `[Blender + Cura Software]` | `[Making the 3D print of eylids]` |
+| `[Adobe Illustrator + Rhino 3D]` | `[Making the box for laser cutting]` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
