@@ -156,8 +156,8 @@ Examples:
 | Age range | `[12-25]` |
 | Solo or multiplayer | `[solo]` |
 | Expected duration of one round | `[60 seconds]` |
-| What should the player feel? | `[excietment, environmetal observance]` |
-| Is explanation required before use? | `[a brief explanation on the rules of the game is required, including how they must take photos and winning criterias]` |
+| What should the player feel? | `[excitement, environmetal observance]` |
+| Is explanation required before use? | `[a brief explanation on the rules of the game is required, including how they must take photos and winning criteria]` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
@@ -173,9 +173,9 @@ Describe exactly how a player will use the project.
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[You must take photos live and no select those from your library]`
+- `[Wait for the Neopixel to flash a colour before finding an object]`
+- `[You must take photos live and not select those from your library (not an option provided on the MIT app)]`
 - `[Users only get a point if they identify the colour accurately]`
-- `[Rule 3]`
 - `[Rule 4]`
 
 ---
@@ -200,7 +200,7 @@ What is the smallest version of this project that still delivers the core experi
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Two movable eyes that both flash colours for users to play with]`
+- `[Two movable eyes that both flash colours for users to play with where the two eyes could flash different colours, making it a multiplayer game]`
 - `[An app UI that matches the overall aesthetic of the game we intent to make]`
 - `[Sound feedbacks everytime a player wins or loses]`
 
@@ -367,7 +367,7 @@ What changed after the CAD, animation, or simulation stage?
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`The ESP32 is connected to a breadboard power supply (which draws power from a wall socket). On the 3.3V end, a Neopixel is connected, with an assigned pin and a grounded wire. The same is done with the motor, however, to 5V instead of 3.3V.`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
