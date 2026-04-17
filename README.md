@@ -596,9 +596,10 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `[ESP32]` | `1` | `Yes` | `Yes` | `1` | `[Spec]` | `370/Unit` | `Our ESP32 was heating up and causing problems` |
+| `Microservo` | `2` | `Yes` | `Yes` | `142/Unit` | `SG 90 9G Mini Micro Servo plastic gear` | `[The ones in kit are all fried]` |
+| `Neopixel Ring` | `2` | `Yes` | `Yes` | `116/Unit` | `16Bit WS2812B 5050 RGB LED Built-in Full Color Driving Lights Circular Development Board` | `Also fried` |
+| `Skewers` | `1` | `No` | `[Yes` | `90/Pack` | `Bamboo` | `Hinge/ pivot for our eye` |
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -616,19 +617,19 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `Microservo` | `To move the eye` | `Through Anish and Tejas who ordered from Robu` | `[Date]` | `Received` |
+| `Neopixel Ring` | `[Reason]` | `(https://robu.in/product/16bit-ws2812b-5050-rgb-led-built-in-full-color-driving-lights-circular-development-board/?gad_source=1&gad_campaignid=17416544847&gclid=CjwKCAjwtIfPBhAzEiwAv9RTJvOMW2sC-M2FHE5gaLiex870LlnY4tKtAvi3_e03yqkNnou4FeMPEBoCSfMQAvD_BwE)` | `14 Apr 2026` | `[Pending / Ordered / Received]` |
 
 ## 12.4 Budget Summary
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
-| Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
-| Purchased extras | `[Cost]` |
-| Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| Electronics | `628` |
+| Mechanical parts | `NA` |
+| Fabrication materials | `NA` |
+| Purchased extras | `60` |
+| Contingency | `258 (1 microservo + 1 neopixel ring)` |
+| **Total** | `946` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
