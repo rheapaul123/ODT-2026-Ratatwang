@@ -254,7 +254,7 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`(https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/848389ac231660e972e53168771c3d192a1e8bde/images/first%20draft%20of%20Eye%20Spy.jpeg)`
 
 Example:
 ```md
@@ -360,8 +360,9 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `Servo Motor` | `1` | `Controls eyeball movement` |
+| `Servo Motor` | `2` | `Controls eyeball movement` |
 | `Neopixel` | `1` | `Flashes the colour(s) that the player needs to find` |
+| `Switch` | `1` | `Initiate the game` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -382,7 +383,7 @@ Insert a hand-drawn or software-made circuit diagram.
 | Power source | `Adaptor` |
 | Voltage required | `5V for Servo(s), and 3.3V for the Neopixels` |
 | Current concerns | `Grounding is not fully/ properly connected, causing short circuiting` |
-| Safety concerns | `[Write here]` |
+| Safety concerns | `Since there are suspended elements (neopixel and servos to a support), the wires should not interwine and get snagged. Also ESP32s have potential, unexpected movement due to Wi-Fi/Bluetooth interference as well as possible power management issues- posing risks.` |
 
 ---
 
@@ -611,7 +612,7 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`The eyelid was printed using PLA filament in order to be light weight (since the micro servo has limited torque) and to leverage the advantage of having existing models on the internet. The outside box was laser cut for effeciency, cleanliness, sturdiness and since the colour matched with the eye (making it seem like a box of skin of sorts). The levers were changed from PLA to GI wire to more easily vary the arm length (in order to maximise torque). A smaller gauge GI wire was put through the holes of the servo horns in order to reduce gaps and ineffeciencies of the same.`
 
 ## 12.3 Items to Purchase Separately
 
@@ -624,11 +625,11 @@ Examples:
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `628` |
+| Electronics | `770` |
 | Mechanical parts | `NA` |
 | Fabrication materials | `NA` |
 | Purchased extras | `60` |
-| Contingency | `258 (1 microservo + 1 neopixel ring)` |
+| Contingency | `142 (1 neopixel ring)` |
 | **Total** | `946` |
 
 ## 12.5 Budget Reflection
