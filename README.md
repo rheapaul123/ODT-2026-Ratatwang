@@ -59,7 +59,7 @@ By the final review, this README should clearly show:
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
 | `Rhea` | `App` | `Coding / Electronics` | `[Write here]` |
-| `Zanna` | `Mechanics / Fabrication` | `Coding / Electronics` | `[Write here]` |
+| `Zanna` | `Mechanics / Fabrication` | `Coding / Electronics` | `Fair understanding of 3D printing and laser cutting. Similarly, can visualise and iterate mechanics and the calculations needed (if necessary). Comfortable working with varied materials. Technical understanding of circuits and basic code logic. Can work within deadlines and in teams` |
 
 ## 1.3 Project Title
 `Eye Spy`
@@ -241,10 +241,10 @@ Include:
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `[Switch / App Input]` | Input | `Triggers of the initiation of the game in order for the colour to first flash and then receive data.` |
+| `[ESP32 / Controller]` | Processing | `Contains code of electronic elements as well as processes for data sent from the app` |
+| `[LED / Motor / Servo / Buzzer / Display]` | Output | `Servo opens/ closes eyelids; LED flashes the appropriate colours` |
+| `[Mechanical Assembly]` | Physical Action | `Eyelids open and close` |
 
 ---
 
@@ -612,7 +612,7 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`The eyelid was printed using PLA filament in order to be light weight (since the micro servo has limited torque) and to leverage the advantage of having existing models on the internet. The outside box was laser cut for effeciency, cleanliness, sturdiness and since the colour matched with the eye (making it seem like a box of skin of sorts). The levers were changed from PLA to GI wire to more easily vary the arm length (in order to maximise torque). A smaller gauge GI wire was put through the holes of the servo horns in order to reduce gaps and ineffeciencies of the same.`
+`The eyelid was printed using PLA filament in order to be light weight (since the micro servo has limited torque) and to leverage the advantage of having existing models on the internet. The outside box was laser cut for effeciency, cleanliness, sturdiness and since the colour matched with the eye (making it seem like a box of skin of sorts). The levers were changed from PLA to GI wire to more easily vary the arm length (in order to maximise torque). A smaller gauge GI wire was put through the holes of the servo horns in order to reduce gaps and ineffeciencies of the same. A servo motor had the most torque among the motors that were there (DC, stepper) while no being too powerful to break the arms/ model. The angles that motor arm needs to open are also within 180 and at a slower rate.`
 
 ## 12.3 Items to Purchase Separately
 
