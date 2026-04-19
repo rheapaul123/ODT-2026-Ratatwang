@@ -672,13 +672,15 @@ Include:
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
+| Concept and gameplay | `Rhea and Zanna` | `[Name]` |
+| Electronics | `Rhea and Zanna` | `[Name]` |
+| Coding | `Rhea and Zanna` | `[Name]` |
 | App | `Rhea` | `Zanna` |
 | Mechanical build | `Zanna` | `Rhea` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Testing | `Rhea` | `Zanna` |
+| Documentation | `Zanna` | `Rhea` |
+
+|Most of our build was based on the app and the physical mechanical build. The rest of the elements shifted based on the needs and changes brought by these major parts and were split pretty much evenly.|
 
 ---
 
