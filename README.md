@@ -122,7 +122,7 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `Toy` | `I Spy` | `We took inspiration from the game theory of this game to implement into our play` |
+| `Game` | `I Spy` | `We took inspiration from the game theory of this game to implement into our play` |
 | `Object` | `Animatronic Servo Eyes` | `We took inspiration from the physical structures of these eyes for our fabrication` 
 |||`Links for inspo and 3d print models: https://youtu.be/5bfzqe0QXRg?si=PoGbVW39JObyZQRv https://youtu.be/lPpexsNYKsE?si=GfHDR3qoW0oU5YEM `|
 
@@ -241,7 +241,7 @@ Include:
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Switch / App Input]` | Input | `Triggers of the initiation of the game in order for the colour to first flash and then receive data.` |
+| `[Switch / App Input]` | Input | `Triggers off the game in order for the colour to first flash` |
 | `[ESP32 / Controller]` | Processing | `Contains code of electronic elements as well as processes for data sent from the app` |
 | `[LED / Motor / Servo / Buzzer / Display]` | Output | `Servo opens/ closes eyelids; LED flashes the appropriate colours` |
 | `[Mechanical Assembly]` | Physical Action | `Eyelids open and close` |
@@ -653,7 +653,7 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`[Write Here]`
 
 ## 13.2 Task Breakdown
 
@@ -726,10 +726,10 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `[Set up ESP32, NeoPixel, and basic LED control]`| `[Neopixel and servo were fried; ESP was iffy. Physical model was thought out and references collected (for app as well)]` | `[Soldered a strip to test our electronics + code]`|`[Ordered necessary parts]`|
+| Week 2 | `[Got sample print and then larger print`| `[Servo worked, but linkage caused uneven eyelid motion. Required recalibration of angles.]`|`[Adjusted servo angles and changed linkage attachment points for smoother motion.]`| `[Worked on app logic and begin Bluetooth communication setup]` |
+| Week 3 | `[Implement Bluetooth communication with MIT App Inventor; had to modify the mechanical arms and joints due to torque inefficiencies]`| `[BLE communication worked, but initial data parsing errors occurred.]`| `[Switched from raw UART-style parsing to structured string parsing (R,G,B format).]`|`[Integrate full game logic and connect app input to gameplay loop]`|
+| Week 4 | `[Complete full game integration and test gameplay experience]` | `[Game loop worked successfully. Some latency and user confusion during playtesting.]`| `[Added clearer feedback (PASS/FAIL signals, flashing colours) and adjusted threshold for difficulty.]`| `[Refine UI in app and improve physical build durability]`|
 
 ---
 
@@ -744,11 +744,17 @@ Expected outcomes:
 | `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
 | `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
 
+| `[Bluetooth disconnects]`                  | `Technical`  | `Medium`   | `High`   | `[Implement timeout handling and auto-reconnect using BLEConnection class]`| `[Rhea]` |
+| `[Structure breaks during play]`           | `Mechanical` | `Medium`   | `High`   | `[Reinforce 3D printed eyelids and reduce friction while bettering its stay at the pivots duing use]` | `[Zanna]` |
+| `[Servo jitter or inaccurate positioning]` | `Technical`  | `Medium`   | `Medium` | `[Calibrate angles and ensure stable power supply to servo]` | `[Zanna]` |
+| `[Users do not understand gameplay]`       | `Gameplay`   | `Medium`   | `High`   | `[Add clear instructions in app and visual feedback using LED flashes]` | `[Rhea and Zanna]` |
+
+
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`[The consistency of the eyelids and their movement; smaller nuances of the code for smooth gameplay]`
 
 ---
 
@@ -758,27 +764,30 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
-| `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
-| `[App communication]` | `[Method]` | `[What counts as success?]` |
+| `[Bluetooth connection]`| `[Connect app to ESP32 multiple times and send test data]`| `[Stable connection with no unexpected disconnections for at least 5 minutes]` |
+| `[Mechanism movement]`| `[Run repeated open/close cycles of eyelids]` | `[Smooth motion with no jamming or misalignment after 20 cycles]` |
+| `[Sensor behavior]`| `[Test NeoPixel colour output and visibility under different lighting conditions]` | `[Colours are clearly distinguishable to users]` |
+| `[App communication]`| `[Send multiple RGB values from app and verify ESP32 receives correctly]` | `[Correct parsing and response (PASS/FAIL) every time]` |
+
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `[Observe first-time users without explanation and note confusion points]` |
+| Is the interaction satisfying? | `[Ask users for feedback after playing one full round]` |
+| Do players want another turn? | `[Track if players voluntarily replay the game]` |
+| Is the challenge balanced? | `[Adjust threshold and observe success/failure rates across players]` |
+| Is the response clear and immediate? | `[Check if players notice LED feedback and servo movement instantly]` |
+
 
 ## 16.3 Testing and Debugging Log
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+| `[15 Apr 2026]` | `[Bluetooth not connecting properly]` | `[Technical]` | `[Switched to BLE connection while looking through MIT app inventor block updates and made Bluetooth a part of the UI front end]` | `[Worked]` | `[Finetune UI]` |
+| `[16 Apr 2026]` | `[Servo motor was not moving the arms]` | `[Mechanical]` | `[Changed to GI wire arms of shorter lengths, used two servos instead of one and reduced friction at the joints and pivots]` | `[Worked]` | `[Mount down the box the servos are attached to to ensure movement is translated to the eyelids and not the box]` |
+
 
 ## 16.4 Playtesting Notes
 
@@ -804,7 +813,10 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`[The fabrication process involved both mechanical construction and electronic integration. The outer enclosure was laser cut using MDF sheets to create a stable box structure that houses the electronics and moving components. The eyelids were designed and modified digitally and 3D printed to achieve the required curved geometry and smooth motion. Multiple iterations of the eyelid design were printed to improve fit, weight, and balance.
+Assembly involved attaching the 3D printed eyelids to pivot points using thin rods, allowing rotational motion. Initially, longer linkage arms were used, but due to torque inefficiencies and inconsistent movement, these were replaced with shorter GI wire linkages to improve force transmission. The servo motors were mounted inside the box and connected to the eyelids through these linkages. Fastening was done using a combination of hot glue, screws, and adhesive to ensure stability while still allowing minor adjustments.
+The electronics were wired by connecting the NeoPixel to the ESP32 data pin and grounding all components properly. The servo motors and neopixel were powered in accordance to their required voltages using the bread board power supplu. Early versions experienced component damage (fried NeoPixel and servo), so wiring was redone with better testing procedures.
+Finishing included gluing down some of the edges of the laser cut box, gluing the pivots to the box with hot glue and ensuring the eyelids opened and closed smoothly without friction against the frame. Revisions were continuously made, especially to the linkage system and servo positioning, to improve consistency and responsiveness of the eyelid movement during gameplay.]`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
@@ -904,21 +916,21 @@ What would you improve next?
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [ ] Team details are complete
-- [ ] Project description is complete
-- [ ] Inspiration sources are included
-- [ ] Player journey is written
+- [x] Team details are complete
+- [x] Project description is complete
+- [x] Inspiration sources are included
+- [x] Player journey is written
 - [ ] Sketches are added
-- [ ] BOM is complete
-- [ ] Purchase list is complete
-- [ ] Budget summary is complete
-- [ ] Mechanical planning is documented if applicable
-- [ ] App planning is documented if applicable
-- [ ] Code flowchart is added
+- [x] BOM is complete
+- [x] Purchase list is complete
+- [x] Budget summary is complete
+- [x] Mechanical planning is documented if applicable
+- [x] App planning is documented if applicable
+- [x] Code flowchart is added
 - [ ] Task breakdown is complete
-- [ ] Weekly logs are updated
-- [ ] Risk register is complete
-- [ ] Testing log is updated
+- [x] Weekly logs are updated
+- [x] Risk register is complete
+- [x] Testing log is updated
 - [ ] Playtesting notes are included
 - [ ] Build photos are included
 - [ ] Final reflection is written
