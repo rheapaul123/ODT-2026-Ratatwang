@@ -829,7 +829,8 @@ Suggested images:
 - app screenshot,
 - final build.
 
-`Physical build photos - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/ad0dc008b35ba6d656b883dc3015ceb4b7ac3a0d/images/Build%20Process%20Images%20(17)`
+`Physical build photos - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/ad0dc008b35ba6d656b883dc3015ceb4b7ac3a0d/images/Build%20Process%20Images%20(17)
+App build and files - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/156a3a910dc2a675a7016f8f94bce01a42303cea/images/App%20Files`
 
 Example:
 
