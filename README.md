@@ -829,9 +829,9 @@ Suggested images:
 - app screenshot,
 - final build.
 
-Example:
-```md
+`Physical build photos - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/ad0dc008b35ba6d656b883dc3015ceb4b7ac3a0d/images/Build%20Process%20Images%20(17)`
 
+Example:
 
 
 ```
