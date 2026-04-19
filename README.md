@@ -618,8 +618,8 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `Microservo` | `To move the eye` | `Through Anish and Tejas who ordered from Robu` | `[Date]` | `Received` |
-| `Neopixel Ring` | `[Reason]` | `(https://robu.in/product/16bit-ws2812b-5050-rgb-led-built-in-full-color-driving-lights-circular-development-board/?gad_source=1&gad_campaignid=17416544847&gclid=CjwKCAjwtIfPBhAzEiwAv9RTJvOMW2sC-M2FHE5gaLiex870LlnY4tKtAvi3_e03yqkNnou4FeMPEBoCSfMQAvD_BwE)` | `14 Apr 2026` | `[Pending / Ordered / Received]` |
+| `Microservo` | `To move the eye` | `Through Anish and Tejas who ordered from Robu` | `15 Apr 2026` | `Received` |
+| `Neopixel Ring` | `Ours was fried, ` | `(https://robu.in/product/16bit-ws2812b-5050-rgb-led-built-in-full-color-driving-lights-circular-development-board/?gad_source=1&gad_campaignid=17416544847&gclid=CjwKCAjwtIfPBhAzEiwAv9RTJvOMW2sC-M2FHE5gaLiex870LlnY4tKtAvi3_e03yqkNnou4FeMPEBoCSfMQAvD_BwE)` | `19 Apr 2026 - mostly tested on the strip` | `Received` |
 
 ## 12.4 Budget Summary
 
@@ -636,7 +636,7 @@ Examples:
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`NA. If anything, we could have possibly sufficed with our old ESP32 (largest cost incurred) but it was heating up too much.`
 
 ---
 
@@ -675,8 +675,8 @@ Include:
 | Concept and gameplay | `[Name]` | `[Name]` |
 | Electronics | `[Name]` | `[Name]` |
 | Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
+| App | `Rhea` | `Zanna` |
+| Mechanical build | `Zanna` | `Rhea` |
 | Testing | `[Name]` | `[Name]` |
 | Documentation | `[Name]` | `[Name]` |
 
@@ -688,28 +688,28 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
-- [ ] Core interaction decided
-- [ ] Sketches made
-- [ ] BOM completed
-- [ ] Purchase needs identified
-- [ ] Key uncertainty identified
-- [ ] Basic feasibility tested
+- [x] Idea finalized
+- [x] Core interaction decided
+- [x] Sketches made
+- [x] BOM completed
+- [x] Purchase needs identified
+- [x] Key uncertainty identified
+- [x] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [ ] Electronics tests completed
-- [ ] CAD/structure planning completed
-- [ ] App UI started if needed
-- [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [x] Electronics tests completed
+- [x] CAD/structure planning completed
+- [x] App UI started if needed
+- [x] Mechanical concept tested
+- [x] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
-- [ ] Electronics integrated
+- [x] Physical body built
+- [x] Electronics integrated
 - [ ] Code connected to hardware
-- [ ] App connected if required
+- [x] App connected if required
 - [ ] First playable version exists
 
 ### Week 4 — Refine and Finish
