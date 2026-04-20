@@ -909,6 +909,7 @@ Suggested images:
 `App build and files - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/156a3a910dc2a675a7016f8f94bce01a42303cea/images/App%20Files`
 
 `Some of the main images:`
+
 <img src="images/Build Process Images (17)/Box Rough Sketchs + Iterations.png" width="300"> <img src="images/Build Process Images (17)/Box ideas.png" width="300">
 <img src="images/Build Process Images (17)/Measuring intial eyelid for upscaling.png" width="300"> <img src="images/Build Process Images (17)/Initial eyelid print.png" width="300">
 <img src="images/Build Process Images (17)/Soldering Neopixel1.png" width="300">
