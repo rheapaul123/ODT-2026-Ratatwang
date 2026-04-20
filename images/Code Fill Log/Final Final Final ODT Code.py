@@ -34,15 +34,14 @@ np.write()
 
 # ─────────────────────────────────────────────────────────────────────────
 # Servo
-# Physical calibration (from image):
-#   CLOSE = arm almost horizontal (10°)  → linkage extended  → lid closed
-#   OPEN  = arm at 120°                  → linkage retracted → lid open
-# Servo 2 is mirrored: angle = 180 - servo1 angle
+# Safe narrow range — prevents grinding/straining against mechanical limits
+# Only tune SERVO1 values; SERVO2 is automatically mirrored.
+# If still grinding: adjust OPEN/CLOSE in steps of 5° until smooth.
 # ─────────────────────────────────────────────────────────────────────────
-SERVO1_OPEN_ANGLE  = 120
-SERVO1_CLOSE_ANGLE = 10
-SERVO2_OPEN_ANGLE  = 180 - SERVO1_OPEN_ANGLE    # 60
-SERVO2_CLOSE_ANGLE = 180 - SERVO1_CLOSE_ANGLE   # 170
+SERVO1_OPEN_ANGLE  = 75
+SERVO1_CLOSE_ANGLE = 45
+SERVO2_OPEN_ANGLE  = 180 - SERVO1_OPEN_ANGLE    # 105
+SERVO2_CLOSE_ANGLE = 180 - SERVO1_CLOSE_ANGLE   # 135
 
 servo1 = PWM(Pin(4), freq=50)
 servo2 = PWM(Pin(5), freq=50)
