@@ -374,7 +374,7 @@ Describe the main electrical connections.
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`[[Upload image and link here]](https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/5a033e62d7a6c06c8d7c84f976ec631c01db6591/images/circuit_image.png)`
 
 ## 9.4 Power Plan
 
@@ -474,64 +474,132 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[<img width="539" height="517" alt="Screenshot 2026-04-14 at 10 20 08 AM" src="https://github.com/user-attachments/assets/4bffa2b8-094e-4426-82ae-f5ddb741a28a" />]`
+`[<img width="539" height="517" alt="Screenshot 2026-04-14 at 10 20 08 AM" src="https://github.com/user-attachments/assets/4bffa2b8-094e-4426-82ae-f5ddb741a28a" />]
+[https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/3bf8b3c2e4d0e56254a868b55be2a98dccc1eb29/images/Eyespy%20system%20flow.png]`
+
 
 ## 10.4 Pseudocode
 
 ```text
-[START
+PROGRAM EyeSpy
 
-INITIALIZE NeoPixel
-INITIALIZE Servo
-INITIALIZE Bluetooth UART
+── SETUP ──────────────────────────────────────────────────
+  initialise NeoPixel ring (16 LEDs, GPIO 18)
+  initialise servo1 (GPIO 4), servo2 (GPIO 5)
+  initialise button (GPIO 19, pull-up, active LOW)
+  set all LEDs OFF
+  closeEyes()
+  start BLE advertising as "EyeSpy"
 
-SET eyes to OPEN
+── WAIT FOR BLUETOOTH ─────────────────────────────────────
+  WHILE bluetooth NOT connected:
+    rainbowSnakeTick()        ← advance snake one step, sleep 80 ms
 
-PRINT "Eye Spy ready"
-SEND "Eye Spy ready" via Bluetooth
+── OUTER LOOP (repeat forever) ────────────────────────────
+  LOOP:
 
-WHILE game is running:
+    ── IDLE MODE ──────────────────────────────────────────
+    openEyes()
+    send "IDLE" over BLE
+    nextBlink ← now + random(3000, 6000) ms
 
-    SELECT random colour from palette
-    CONVERT hex to RGB
+    WHILE button NOT pressed:
+      IF now >= nextBlink:
+        quickBlink()          ← close 180 ms, reopen 120 ms
+        nextBlink ← now + random(3000, 7000) ms
+      rainbowSnakeTick()      ← advance snake, sleep 45 ms
 
-    PRINT and SEND target colour
+    ── GAME STARTS ────────────────────────────────────────
+    openEyes()
+    send "GAME_START"
+    round ← 1
+    score ← 0
 
-    OPEN eyes
-    FLASH target colour
+    WHILE round <= 5:
 
-    TURN OFF LED
-    CLOSE eyes
-    SEND "WAITING"
+      threshold ← THRESHOLDS[round]   ← [180,150,120,90,60]
+      send "ROUND:{round}"
 
-    SET guess = null
+      targetColour ← random choice from PALETTE
 
-    WHILE guess not received:
-        READ Bluetooth input
-        IF valid RGB received:
-            STORE guess
-            OPEN eyes
+      ── REVEAL ───────────────────────────────────────────
+      closeEyes()
+      wait 3000 ms              ← anticipation pause
 
-    CALCULATE distance between target and guess
+      openEyes()
+      REPEAT 3 times:
+        set all LEDs to targetColour
+        wait 700 ms
+        set all LEDs OFF
+        wait 350 ms
 
-    IF distance <= threshold:
-        PRINT "PASS"
-        OPEN eyes
-        FLASH green
-        SEND "PASS"
-        CONTINUE game loop
+      ── HIDE ─────────────────────────────────────────────
+      set all LEDs OFF
+      closeEyes()
+      send "WAIT"
 
-    ELSE:
-        PRINT "FAIL"
-        OPEN eyes
-        FLASH red
-        SEND "FAIL"
-        TURN OFF LED
-        STOP game
+      ── WAIT FOR GUESS ───────────────────────────────────
+      guess ← NULL
+      startTime ← now
 
-END
+      WHILE guess IS NULL:
+        elapsed ← now - startTime
+        IF elapsed > 300000 ms:              ← 5 min timeout
+          send "TIMEOUT"
+          openEyes()
+          fast red flash x5
+          closeEyes()
+          guess ← (-1,-1,-1)
+          BREAK
 
-PRINT "Game ended"]
+        every 10 seconds: send "TIME:{remaining}"
+
+        IF BLE data available:
+          line ← read BLE
+          IF line contains ",":
+            clean line → keep only digits and commas
+            split by "," → parts [R, G, B]
+            IF valid: guess ← (R, G, B)
+
+        sleep 50 ms
+
+      ── EVALUATE ─────────────────────────────────────────
+      openEyes()
+      dist ← sqrt( (R1-R2)² + (G1-G2)² + (B1-B2)² )
+
+      IF dist <= threshold:
+        score ← score + 1
+        send "PASS:{score}"
+        fast green flash x5        ← 150 ms on / 80 ms off
+
+        IF round == 5:
+          send "WINNER:{score}"
+          BREAK out of round loop
+        ELSE:
+          send "NEXT_PROMPT"
+          wait for "NEXT" from app
+          round ← round + 1
+
+      ELSE:
+        send "FAIL:{score}"
+        fast red flash x5          ← 150 ms on / 80 ms off
+
+        IF round == 5:
+          send "GAMEOVER:{score}"
+          BREAK out of round loop
+        ELSE:
+          send "NEXT_PROMPT"
+          wait for "NEXT" from app
+          round ← round + 1
+
+    ── GAME OVER ──────────────────────────────────────────
+    closeEyes()
+    set all LEDs OFF
+    send "GAMEOVER:{score}"
+    wait 1000 ms
+    ↻ loop back to IDLE MODE
+
+END PROGRAM
 ```
 
 ---
@@ -815,7 +883,7 @@ Include:
 **Response:**  
 `[The fabrication process involved both mechanical construction and electronic integration. The outer enclosure was laser cut using MDF sheets to create a stable box structure that houses the electronics and moving components. The eyelids were designed and modified digitally and 3D printed to achieve the required curved geometry and smooth motion. Multiple iterations of the eyelid design were printed to improve fit, weight, and balance.
 Assembly involved attaching the 3D printed eyelids to pivot points using thin rods, allowing rotational motion. Initially, longer linkage arms were used, but due to torque inefficiencies and inconsistent movement, these were replaced with shorter GI wire linkages to improve force transmission. The servo motors were mounted inside the box and connected to the eyelids through these linkages. Fastening was done using a combination of hot glue, screws, and adhesive to ensure stability while still allowing minor adjustments.
-The electronics were wired by connecting the NeoPixel to the ESP32 data pin and grounding all components properly. The servo motors and neopixel were powered in accordance to their required voltages using the bread board power supplu. Early versions experienced component damage (fried NeoPixel and servo), so wiring was redone with better testing procedures.
+The electronics were wired by connecting the NeoPixel to the ESP32 data pin and grounding all components properly. The servo motors and neopixel were powered in accordance to their required voltages using the bread board power supply. Early versions experienced component damage (fried NeoPixel and servo), so wiring was redone with better testing procedures.
 Finishing included gluing down some of the edges of the laser cut box, gluing the pivots to the box with hot glue and ensuring the eyelids opened and closed smoothly without friction against the frame. Revisions were continuously made, especially to the linkage system and servo positioning, to improve consistency and responsiveness of the eyelid movement during gameplay.]`
 
 ## 17.2 Build Photos
@@ -932,7 +1000,7 @@ Before submission, confirm that:
 - [x] Weekly logs are updated
 - [x] Risk register is complete
 - [x] Testing log is updated
-- [ ] Playtesting notes are included
+- [x] Playtesting notes are included
 - [ ] Build photos are included
 - [ ] Final reflection is written
 
