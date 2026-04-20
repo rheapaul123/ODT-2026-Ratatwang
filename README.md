@@ -254,7 +254,9 @@ Include:
 Add an early sketch of the full idea.
 
 **Insert image below:**  
-`(https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/848389ac231660e972e53168771c3d192a1e8bde/images/first%20draft%20of%20Eye%20Spy.jpeg)`
+<p align="center">
+  <img src="images/first draft of Eye Spy.jpeg" width="400">
+</p>
 
 Example:
 ```md
@@ -374,7 +376,9 @@ Describe the main electrical connections.
 Insert a hand-drawn or software-made circuit diagram.
 
 **Insert image below:**  
-`[[Upload image and link here]](https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/5a033e62d7a6c06c8d7c84f976ec631c01db6591/images/circuit_image.png)`
+<p align="center">
+  <img src="images/circuit_image.png" width="400">
+</p>
 
 ## 9.4 Power Plan
 
@@ -474,8 +478,11 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[<img width="539" height="517" alt="Screenshot 2026-04-14 at 10 20 08 AM" src="https://github.com/user-attachments/assets/4bffa2b8-094e-4426-82ae-f5ddb741a28a" />]
-[https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/3bf8b3c2e4d0e56254a868b55be2a98dccc1eb29/images/Eyespy%20system%20flow.png]`
+<p align="center">
+  <img src="images/Image Flowchart of Code - Overarching Principle(s).png" width="400">
+</p>
+
+<img src="images/images/Eyespy system flow.png" width="300"> <img src="images/images/eyespy_round_loop.png" width="300">
 
 
 ## 10.4 Pseudocode
@@ -899,6 +906,9 @@ Suggested images:
 
 `Physical build photos - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/ad0dc008b35ba6d656b883dc3015ceb4b7ac3a0d/images/Build%20Process%20Images%20(17)
 App build and files - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/156a3a910dc2a675a7016f8f94bce01a42303cea/images/App%20Files`
+
+`Some of the main images:
+`
 
 Example:
 
