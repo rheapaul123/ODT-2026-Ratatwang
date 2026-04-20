@@ -162,13 +162,13 @@ Examples:
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `When not in play, the eye will be on loading mode where the NeoPixel shows a loading, snake gradient and the eyelids are mostly closed.`
+2. **Start:** `Bluetooth is connected on the game and the eyelids open to the loading NeoPixel.`
+3. **First Action:** `A tactile switch is pressed for the game to actually begin.`
+4. **Main Interaction:** `Players interact with the app by trying to capture objects with the colour displayed on the NeoPixel.`
+5. **System Response:** `The eyelid opens to reveal the colour to be found.`
+6. **Win / Lose / End Condition:** `If the colour is within the Euclidian range (for that round), the eye flashes green. Else, it flashes red. A score is kept on the app and the game moves to the next round when the player clicks the button on the phone. 5 rounds are there for the players to play`
+7. **Reset:** `The game automatically goes back to loading mode (approach) (and Bluetooth is reconnected, if needed) till the tactile switch is pressed again.`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
@@ -865,8 +865,8 @@ What is the single biggest uncertainty in your project at this stage?
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
 | `[15 Apr 2026]` | `[Bluetooth not connecting properly]` | `[Technical]` | `[Switched to BLE connection while looking through MIT app inventor block updates and made Bluetooth a part of the UI front end]` | `[Worked]` | `[Finetune UI]` |
-| `[16 Apr 2026]` | `[Servo motor was not moving the arms]` | `[Mechanical]` | `[Changed to GI wire arms of shorter lengths, used two servos instead of one and reduced friction at the joints and pivots]` | `[Worked]` | `[Mount down the box the servos are attached to to ensure movement is translated to the eyelids and not the box]` |
-
+| `[16 Apr 2026]` | `[Servo motor was not moving the arms]` | `[Mechanical]` | `[Changed to GI wire arms of shorter lengths, used two servos instead of one and reduced friction at the joints and pivots]` | `[Worked partially]` | `[Mount down the box the servos are attached to to ensure movement is translated to the eyelids and not the box]` |
+| `[19 Apr 2026]` | `[Servo motor making noises but the arms are moving]` | `[Mechanical]` | `[Reduced friction on the arms themselves]` | `[Worked a little more]` | `[Figure out whether mounting or a moving box works better]` |
 
 ## 16.4 Playtesting Notes
 
