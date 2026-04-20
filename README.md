@@ -728,20 +728,24 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write Here]`
+`Tasks were divided based on individual strengths and the requirements of the project. Rhea primarily Bluetooth integration with the MIT App Inventor interface, while Zanna focused on the mechanical build, including the 3D printed eyelids and laser-cut structure. Both members collaborated on electronics setup, coding, testing, and gameplay design to ensure all components worked cohesively.
+Decisions were made through discussion and practical testing. When multiple approaches were possible, small prototypes or code tests were used to determine the most effective solution. Final decisions were based on functionality, reliability, and ease of integration rather than personal preference.
+Progress was checked at the end of each working session by comparing completed work against the planned tasks in the timeline. Regular communication ensured that both members were aware of current progress and any issues.
+If a task was delayed, responsibilities were adjusted to maintain overall progress. For example, if mechanical work took longer than expected, parallel tasks such as app development or code refinement were prioritised. Critical tasks required for integration were given priority over secondary improvements.
+Documentation was maintained continuously throughout the project. Updates were made after each major milestone, including testing results, design changes, and challenges faced.`
 
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `[Finalize concept]` | `Rhea` | `2` | `6 Apr` | `Both Meet` | `Done` |
+| T2 | `[Complete BOM]` | `Zanna` | `1` | `9 Apr` | `T1; Finalise with those sourcing + order on Robu` | `Done` |
+| T3 | `[Test electronics]` | `Zanna` | `2` | `14 Apr` | `T1; All parts delivered` | `Done` |
+| T4 | `[Build structure]` | `Zanna` | `4` | `18 Apr` | `T1; Laser cutting and 3D printing finishes` | `Done` |
+| T5 | `[Write control code]` | `Rhea` | `4` | `18 Apr` | `T3` | `Done` |
+| T6 | `[Integrate system]` | `Rhea` | `4` | `19 Apr` | `T4, T5` | `Done` |
+| T7 | `[Playtest]` | `Rhea` | `2` | `19 Apr` | `T6` | `Done` |
+| T8 | `[Refine and document]` | `Zanna` | `3` | `21 Apr` | `T7` | `Done` |
 
 ## 13.3 Responsibility Split
 
@@ -787,7 +791,7 @@ Expected outcomes:
 - [x] Electronics integrated
 - [ ] Code connected to hardware
 - [x] App connected if required
-- [ ] First playable version exists
+- [x] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
@@ -914,8 +918,6 @@ Suggested images:
 <img src="images/Build Process Images (17)/Measuring intial eyelid for upscaling.png" width="300"> <img src="images/Build Process Images (17)/Initial eyelid print.png" width="300">
 <img src="images/Build Process Images (17)/Soldering Neopixel1.png" width="300">
 <img src="images/Build Process Images (17)/Initial levers.png" width="300"> <img src="images/Build Process Images (17)/Side view of final servo orientation.png" width="300">
-
-Example:
 
 
 ## 17.3 Version History
