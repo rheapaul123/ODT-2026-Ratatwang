@@ -659,11 +659,11 @@ Insert a sketch or screenshot of the app interface.
 
 ## 11.5 App Screen Flow
 
-1. `[ ]`
-2. `[Step 2]`
-3. `[Step 3]`
-4. `[Step 4]`
-
+1. `[Home Screen- Display “Start” button > User taps Start to begin]`
+2. `[CDevice Connection Screen- User taps Scan for Devices > Select Bluetooth device: “EyeSpy” (Handled by game coordinators, Zanna or Rhea if needed)> Once device is selected, user taps Next]`
+3. `[Play Screen (Instructions State)- App displays task instructions for the round > Prompt user to capture a color > User taps Take Photo]`
+4. `[Camera Screen- Camera interface opens > User captures image > User confirms photo > App returns to Play Screen]`
+5. `[Color Selection & Submission - User selects detected/desired color > User taps Submit to send guess]`
 ---
 
 # 12. Bill of Materials
