@@ -914,8 +914,6 @@ Suggested images:
 Example:
 
 
-```
-
 ## 17.3 Version History
 
 | Version | Date | What Changed | Why |
