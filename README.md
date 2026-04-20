@@ -908,8 +908,11 @@ Suggested images:
 
 `App build and files - https://github.com/rheapaul123/ODT-2026-Ratatwang/tree/156a3a910dc2a675a7016f8f94bce01a42303cea/images/App%20Files`
 
-`Some of the main images:
-`
+`Some of the main images:`
+<img src="Box Rough Sketchs + Iterations.png" width="300"> <img src="images/Box ideas.png" width="300">
+<img src="Measuring intial eyelid for upscaling.png" width="300"> <img src="images/Eyelid Upscaling Calcs.png" width="300">
+<img src="Soldering Neopixel1.png" width="300">
+<img src="images/Build Process Images (17)/Initial levers.png" width="300"> <img src="images/Side view of final servo orientation.png" width="300">
 
 Example:
 
