@@ -344,8 +344,8 @@ If your project includes mechanical motion, document the digital planning before
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `Blender` | `https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/68a651c6242b7b92f2233504ef28817ee9066fbd/images/Screenshot%20of%203D%20model%20-%20Eyelids%20%2B%20Arms.png` | `Since the eyelids were sourced from an external link (https://www.thingiverse.com/thing:1877417), the eyelid/ blinking motion were more-or-less confirmed. The crank, however, had to be modified and created directly on blender. Viewing the lever over where the crank would pivot confirmed this. However, in our test printing before the final printing, more tolerance was created to account for the added material that does not fully sand off from the supports.` |
-| `Blender Model to Cura` | `https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/054277c34ad22f9eb690615fb1478c9285b80c08/images/First%20Cura%20File%20-%20Sample%20Print.png` | `A picture of the initial model before scaling on Cura (changes were saved after on Blender, so the ss is from Cura). The software helped verify any gaps that could be in the build since that was an issue with a previously sourced file. It also helped verify the viability of the print.` |
+| `Blender` | <img src="images/images/Screenshot of 3D model - Eyelids + Arms.png" width="400"> |
+| `Blender Model to Cura` | <img src="images/images/First Cura File - Sample Print.png" width="400"> | `A picture of the initial model before scaling on Cura (changes were saved after on Blender, so the ss is from Cura). The software helped verify any gaps that could be in the build since that was an issue with a previously sourced file. It also helped verify the viability of the print.` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
