@@ -910,8 +910,11 @@ Suggested images:
 
 `Some of the main images:`
 <img src="Box Rough Sketchs + Iterations.png" width="300"> <img src="images/Box ideas.png" width="300">
+
 <img src="Measuring intial eyelid for upscaling.png" width="300"> <img src="images/Eyelid Upscaling Calcs.png" width="300">
+
 <img src="Soldering Neopixel1.png" width="300">
+
 <img src="images/Build Process Images (17)/Initial levers.png" width="300"> <img src="images/Side view of final servo orientation.png" width="300">
 
 Example:
