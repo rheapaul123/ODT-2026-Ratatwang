@@ -344,8 +344,8 @@ If your project includes mechanical motion, document the digital planning before
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `Blender` | <img src="images/images/Screenshot of 3D model - Eyelids + Arms.png" width="400"> |
-| `Blender Model to Cura` | <img src="images/images/First Cura File - Sample Print.png" width="400"> | `A picture of the initial model before scaling on Cura (changes were saved after on Blender, so the ss is from Cura). The software helped verify any gaps that could be in the build since that was an issue with a previously sourced file. It also helped verify the viability of the print.` |
+| `Blender` | images/Screenshot of 3D model - Eyelids + Arms.png |
+| `Blender Model to Cura` | images/First Cura File - Sample Print.png | `A picture of the initial model before scaling on Cura (changes were saved after on Blender, so the ss is from Cura). The software helped verify any gaps that could be in the build since that was an issue with a previously sourced file. It also helped verify the viability of the print.` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
