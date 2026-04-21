@@ -272,7 +272,9 @@ Add a sketch with labels showing:
 - output elements.
 
 **Insert image below:**  
-`[Upload image and link here]`
+<p align="center">
+  <img src="images/Eye Spy Final Sketch.jpeg" width="400">
+</p>
 
 ## 7.3 Approximate Dimensions
 
@@ -1003,20 +1005,20 @@ Before submission, confirm that:
 - [x] Project description is complete
 - [x] Inspiration sources are included
 - [x] Player journey is written
-- [ ] Sketches are added
+- [x] Sketches are added
 - [x] BOM is complete
 - [x] Purchase list is complete
 - [x] Budget summary is complete
 - [x] Mechanical planning is documented if applicable
 - [x] App planning is documented if applicable
 - [x] Code flowchart is added
-- [ ] Task breakdown is complete
+- [x] Task breakdown is complete
 - [x] Weekly logs are updated
 - [x] Risk register is complete
 - [x] Testing log is updated
 - [x] Playtesting notes are included
-- [ ] Build photos are included
-- [ ] Final reflection is written
+- [x] Build photos are included
+- [x] Final reflection is written
 
 ---
 
