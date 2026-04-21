@@ -956,7 +956,7 @@ Describe the final version of your project.
 How did the project change from the initial idea?
 
 **Response:**  
-`[riginally, a single servo was intended to control the mechanism, but the structure proved too heavy, requiring design adjustments to reduce load. Mechanical components such as 3D-printed pulleys were replaced with a simpler wire-based system due to size limitations. Additionally, the overall experience was enhanced by introducing features like a visual loading sequence before gameplay, improving usability and making the interaction more engaging and polished.]`
+`[Originally, a single servo was intended to control the mechanism, but the structure proved too heavy, requiring design adjustments to reduce load. Mechanical components such as 3D-printed pulleys were replaced with a simpler wire-based system due to size limitations. Additionally, the overall experience was enhanced by introducing features like a visual loading sequence before gameplay, improving usability and making the interaction more engaging and polished.]`
 
 ---
 
