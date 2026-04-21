@@ -655,7 +655,7 @@ Provides an intuitive colour selection interface (through colour picker)]`
 Insert a sketch or screenshot of the app interface.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`[https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/main/images/Appscreenshots/App_ss_2.png]`
 
 ## 11.5 App Screen Flow
 
@@ -795,11 +795,11 @@ Expected outcomes:
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
-- [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [x] Technical bugs reduced
+- [x] Playtesting completed
+- [x] Improvements made
+- [x] Documentation completed
+- [x] Final build ready
 
 ## 14.2 Weekly Update Log
 
@@ -924,9 +924,9 @@ Suggested images:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | ` https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/main/images/App%20Files/EyeSpy_V1.aia` | `[16 April 2026]` | `[The basic bones of the app which only included aspects of the app that was required]` | `[The app while being woking, did not meet the visual expectations that was required.]` |  
+| `v2` | `https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/main/images/App%20Files/EyeSpy_BLE_v3.aia` | `[18 April 2026]` | `[The app now had visual and user friendly heirarchy  in the order of its buttons]` | `[As we understood more of the game flow through test runs we realised there was a need not only for the app to have a visual aesthetic but also have an intended order in which we present the users with the required buttons]` |
+
 
 ---
 
@@ -936,23 +936,22 @@ Suggested images:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`[Eye Spy is a robotics-based colour memory game built around an ESP32 microcontroller running MicroPython, connected to a custom MIT App Inventor Android application via Bluetooth Low Energy (BLE). The hardware consists of a 16-LED NeoPixel ring acting as the eye's iris, two mirrored micro servos controlling a 3D-printed eyelid mechanism, and a tactile button on GPIO 19 that triggers each game session. On power-up, the ESP32 advertises over BLE while the NeoPixel displays a soft rainbow snake animation and the eyelids blink naturally at random intervals. Once the app connects and the player presses the tactile button, the game begins — the eyelid closes for three seconds of anticipation, then opens as the NeoPixel flashes a target colour three times from a curated palette of ten vibrant but reduced-brightness shades chosen to match real-world objects. The eyelid then closes while the player has five minutes to find a matching object, photograph it using the app's built-in camera, and tap the colour from their photo on the canvas. The app extracts the RGB value of the tapped pixel and sends it to the ESP32 via BLE, which compares it to the target using Euclidean distance in RGB space. A correct guess triggers fast green flashes and an open-eye animation, while an incorrect guess triggers fast red flashes. The game runs for five rounds with the difficulty threshold tightening each round from 180 down to 60, and a Next Round button in the app advances play between rounds. Once all five rounds are complete, the NeoPixel returns to its idle rainbow snake animation, ready for the next game session to begin. ]`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[The feedback loop: The feedback loop was implemented effectively using the NeoPixel LEDs and servo coordination to provide immediate, intuitive responses. Correct answers trigger a green flashing sequence, while incorrect guesses result in red flashes, reinforcing user understanding without requiring textual feedback. Additionally, transitional effects like the rainbow loading animation enhance user engagement and signal state changes clearly. This combination of visual cues ensures the player always understands the game outcome and current status in real time. Even if users were lost during the game, we ensured to include an instructions label on the app screen to guide them on what they need to do next. ]`
+- `[The logic of gameplay: The game logic is structured around a round-based system where a target RGB value is randomly selected and briefly displayed to the user. Afterwards, the system enters a waiting state, allowing the player a fixed time window to submit a guess. The guess is parsed and compared to the target using Euclidean distance, ensuring tolerance-based evaluation rather than exact matching. Progression, win conditions, and failure states are handled deterministically, making the gameplay consistent and predictable.]`
+- `[The fundamental code: The code is modular and organised into clearly defined functional blocks, separating hardware control, communication, and game logic. Functions handle LED control, servo movement, and Bluetooth communication independently, improving readability and maintainability. The use of buffered input parsing and newline-terminated messages ensures reliable data transmission over BLE. Time-based control using non-blocking checks allows smooth gameplay flow, while global configuration variables make the system easy to tune and extend.]`
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[App responsiveness: If possible we could have expanded beyond MITApp Invetor. Users often disconnected from the app due to their distance from the main device that could have been evaded if we searched for an apt alternate.]`
+- `[The set up time: With the applications we decided to use there was a large amount of set up time required before users were allowed to play. This could have been streamlined such that users could start playing as soon as they found interest in the game instead of waiting for the app to connect.]`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`[riginally, a single servo was intended to control the mechanism, but the structure proved too heavy, requiring design adjustments to reduce load. Mechanical components such as 3D-printed pulleys were replaced with a simpler wire-based system due to size limitations. Additionally, the overall experience was enhanced by introducing features like a visual loading sequence before gameplay, improving usability and making the interaction more engaging and polished.]`
 
 ---
 
