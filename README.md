@@ -58,8 +58,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Rhea` | `App` | `App Building  / Coding / Fair understanding of gameplay and user knowledge / Understanding of how to adequately troubleshoot code and App / Documentation` 
-| `Zanna` | `Mechanics / Fabrication` | `Coding / Electronics` | `Fair understanding of 3D printing and laser cutting. Similarly, can visualise and iterate mechanics and the calculations needed (if necessary). Comfortable working with varied materials. Technical understanding of circuits and basic code logic. Can work within deadlines and in teams` |
+| `Rhea` | `App` | `Coding / Electronics`| `Fair understanding of gameplay and user knowledge / Understanding of how to adequately troubleshoot code and App / Documentation`| 
+| `Zanna` | `Mechanics / Fabrication` | `Electronics/ Coding` | `Fair understanding of 3D printing and laser cutting. Similarly, can visualise and iterate mechanics and the calculations needed (if necessary). Comfortable working with varied materials. Technical understanding of circuits and basic code logic. Can work within deadlines and in teams` |
 
 ## 1.3 Project Title
 `Eye Spy`
