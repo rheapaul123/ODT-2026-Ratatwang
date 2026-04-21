@@ -928,7 +928,10 @@ Suggested images:
 |---|---|---|---|
 | `v1` | ` https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/main/images/App%20Files/EyeSpy_V1.aia` | `[16 April 2026]` | `[The basic bones of the app which only included aspects of the app that was required]` | `[The app while being woking, did not meet the visual expectations that was required.]` |  
 | `v2` | `https://github.com/rheapaul123/ODT-2026-Ratatwang/blob/main/images/App%20Files/EyeSpy_BLE_v3.aia` | `[18 April 2026]` | `[The app now had visual and user friendly heirarchy  in the order of its buttons]` | `[As we understood more of the game flow through test runs we realised there was a need not only for the app to have a visual aesthetic but also have an intended order in which we present the users with the required buttons]` |
-
+| `v3` | `Initial single-servo eyelid mechanism `|`[16 April 2026]` | `[The physical build used one servo motor connected to both eyelids through shared linkage arms inside the laser-cut box structure.] `| `[While functional in theory, the single motor setup led to uneven movement due to torque imbalance and inconsistent force distribution across both eyelids.]` |
+| `v4 `| `Dual-servo eyelid mechanism `| `[18 April 2026]` | `[The build was updated to use two separate servo motors, each controlling one eyelid with shorter GI wire linkages for improved precision.]` | `[This change allowed more controlled and symmetrical movement, reduced strain on each motor, and improved responsiveness of the eyelid mechanism during gameplay.]` |
+| `v5 `| `Code + interaction update (loading screen + start button) `| `[19 April 2026]` |` [A NeoPixel loading snake gradient animation was added along with a physical push button to trigger the start of the game instead of auto-starting on power.]` |` [This added a clear start interaction improved usability and gave players control over when to begin.]` |
+| `v6 `| `Gameplay difficulty balancing` | `[20 April 2026]` | `[The colour matching threshold and feedback system were adjusted after testing, moving from very strict to very lenient and finally to a balanced midpoint.] `| `[Initial versions were either too difficult (users failed quickly) or too easy (no challenge), so iterative tuning was required to create an engaging and fair gameplay experience.]` |
 
 ---
 
@@ -965,7 +968,10 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`[The team worked well in dividing tasks according to strengths, which allowed both members to make efficient progress in parallel. Collaboration during integration and testing was effective, as both members contributed to problem-solving and debugging. Communication remained consistent, and decisions were made logically based on testing rather than assumption.`
+`Progress was slowed down primarily by technical and mechanical failures, such as damaged components (NeoPixel and servo) and inefficiencies in the linkage mechanism. These required reworking parts of the build and caused delays in integration. Additionally, initial issues with Bluetooth communication and data parsing took time to resolve along side how blocks were affected by changing UI. A last minute blow on our power supply module also meant that we could not do a full run through with required updates till the morning of the exhibition, where we were able to source and use another one.`
+`It did, however, teach us the importance of soft skills and talking to other people in order to meet our needs for the day of the exhibition.`
+`Overall, time and responsibilities were managed effectively, with most tasks completed within the planned deadlines. Flexibility in reallocating tasks when delays occurred helped maintain progress, although more buffer time could have reduced pressure during the final integration stage.]`
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -975,8 +981,12 @@ What did you learn about:
 - fabrication,
 - integration?
 
-**Response:**  
-`[Write here]`
+`[This project developed a deeper understanding of electronics, particularly the importance of stable power supply and correct wiring to prevent component failure. It also highlighted how different components such as servos and Neopixels (RGB rings) must be managed carefully to avoid interference and ensure consistent performance.`
+`In coding, we learned how to structure a complete system involving real-time input, Bluetooth communication, and hardware control. Handling data parsing (R,G,B values) and managing game logic in a loop improved our ability to write structured and responsive code.`
+`Mechanically, we learned how torque, linkage length, and pivot placement affect movement. Initial designs did not translate motion effectively, which led to redesigning the linkage system for better efficiency and smoother eyelid motion.`
+`Fabrication taught us the importance of precision and iteration, especially when working with 3D printing and laser cutting. Small inaccuracies in dimensions or alignment significantly affected performance.`
+`Integration was the most challenging aspect, as combining electronics, code, and mechanical systems required continuous adjustments. We learned that subsystems working individually do not guarantee success when combined, and iterative testing is essential.]`  
+
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -988,13 +998,18 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`[Designing for play highlighted the importance of creating an interaction that is both intuitive and engaging. While the core idea was simple, ensuring that players understood how to interact with the system required clear visual and feedback cues.`
+`The element of delight was achieved through the eyelid mechanism and the reveal of the light, which made the interaction more expressive and engaging compared to a purely digital interface. When in play we though we may have made the game a bit to easy, however, an average score of 3/5 proved our earlier theory of it being fairly balanced.` 
+`Clarity became a key consideration, as initial playtesting showed that users were confused about how to input RGB values. This emphasized the need for better UI design and clearer instructions within the app.`
+`Physical interaction added a strong tactile and visual dimension to the project, making it more immersive. However, it also introduced challenges in ensuring smooth and reliable movement. It taught us that with added physical and digital interactions and interfaces, a fine balance between form and function should be maintained and an understanding of what elements need focusing on in a given moment.`
+`Iteration was critical throughout the process. Both the mechanical design and the gameplay system went through multiple revisions based on testing and feedback. Each iteration improved usability, reliability, and overall user experience.]`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`[With one more week, one of our focii would be improving the user interface of the MIT App Inventor app (which was worked upon in prior weeks as well), improving the consistency of open and close angles (since at times the game would open well but not close shut and vice versa; angles that are too extreme put stress on the motor) and improving the height of the eye (since most of our users were taller than us and had to bend to see the colour fully).
+Additionally, the gameplay could be enhanced by introducing multiple modes and possible even a leaderboard (since we observed players tended to compare scores, both for our game and with other models). Finally, more extensive playtesting would be conducted to refine the user experience and address any remaining usability issues.]`
 
 ---
 
